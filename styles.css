@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2a0612, #7a1232, #f3e7df);
+    color: #1f1f1f;
+    min-height: 100vh;
+    padding: 40px 18px;
+}
+
+header,
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+header {
+    background: #fff8f3;
+    padding: 42px 48px;
+    border-radius: 32px 32px 0 0;
+    border-bottom: 1px solid #e4c9c0;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    right: -80px;
+    top: -90px;
+    background: radial-gradient(circle, rgba(122, 18, 50, 0.35), transparent 65%);
+}
+
+header::after {
+    content: "CV";
+    position: absolute;
+    right: 45px;
+    bottom: 18px;
+    font-size: 95px;
+    font-weight: 900;
+    color: rgba(122, 18, 50, 0.08);
+}
+
+h1 {
+    margin: 0;
+    max-width: 620px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 64px;
+    line-height: 0.95;
+    letter-spacing: -2px;
+    color: #6f102b;
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    margin: 18px 0 28px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2b2b2b;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 999px;
+    background: #f0ddd7;
+    color: #6f102b;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background: #6f102b;
+    color: white;
+}
+
+main {
+    background: #fff8f3;
+    padding: 28px;
+    border-radius: 0 0 32px 32px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 18px;
+}
+
+section {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 22px;
+    border: 1px solid #ead5cf;
+    box-shadow: 0 12px 28px rgba(75, 18, 35, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 0;
+    width: 70px;
+    height: 5px;
+    border-radius: 0 0 8px 8px;
+    background: linear-gradient(90deg, #6f102b, #b94465);
+}
+
+section h2 {
+    margin: 10px 0 18px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 28px;
+    color: #6f102b;
+    letter-spacing: -0.5px;
+}
+
+section p {
+    line-height: 1.65;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.45;
+}
+
+li::marker {
+    color: #9b173d;
+}
+
+#summary {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+    background: linear-gradient(145deg, #ffffff, #f7ebe7);
+}
+
+#contact {
+    background: linear-gradient(145deg, #6f102b, #9b173d);
+    color: white;
+}
+
+#contact h2,
+#contact li::marker {
+    color: white;
+}
+
+#tech-skills {
+    background: #fbf0ec;
+}
+
+#projects,
+#additional {
+    grid-column: span 2;
+}
+
+#projects ul,
+#additional ul,
+#tech-skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 22px;
+}
+
+#projects li,
+#additional li,
+#tech-skills li {
+    margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    header {
+        padding: 32px 24px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    #summary,
+    #projects,
+    #additional {
+        grid-column: auto;
+    }
+
+    #projects ul,
+    #additional ul,
+    #tech-skills ul {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    max-width: 1050px;
+    margin: 0 auto;
+    background: #fff8f3;
+    padding: 20px 28px 30px;
+    border-radius: 0 0 32px 32px;
+    text-align: center;
+    color: #6f102b;
+    font-size: 14px;
+}
+
+main {
+    border-radius: 0;
+}
