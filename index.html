@@ -11,6 +11,7 @@
         <h1>Kachur Veronika</h1>
         <p>Cybersecurity Student</p>
         <nav>
+            <button id="theme-toggle">Switch Theme</button>
             <ul>
                 <li><a href="#contact">Contact Information</a></li>
                 <li><a href="#summary">Summary</a></li>
@@ -67,9 +68,29 @@
                 <li>Passionate about ethical hacking and network security</li>
             </ul>
         </section>
+    <section id="reviews">
+    <h2>Reviews</h2>
+    <div id="reviews-container"></div>
+</section>
     </main>
 <footer>
     <p>© 2026 Kachur Veronika. Personal CV page.</p>
 </footer>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <button id="close-modal" class="close-button">×</button>
+
+        <h2>Contact Me</h2>
+
+        <form action="https://formspree.io/f/xwvazvjw" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="tel" name="phone" placeholder="Your phone" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

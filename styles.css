@@ -238,3 +238,149 @@ footer {
 main {
     border-radius: 0;
 }
+#reviews-container {
+    margin-top: 15px;
+}
+
+.review-card {
+    background: #ffffff;
+    border: 1px solid #ead5cf;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(42, 6, 18, 0.65);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 480px;
+    background: #fff8f3;
+    border-radius: 24px;
+    padding: 28px;
+    border: 1px solid #ead5cf;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    border: none;
+    background: #6f102b;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid #ead5cf;
+    font-family: Arial, sans-serif;
+}
+
+.modal textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.modal button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 999px;
+    background: #6f102b;
+    color: white;
+    cursor: pointer;
+}
+.dark-mode {
+    background: linear-gradient(135deg, #12050a, #2a0612, #4b1024);
+    color: #f8f4ef;
+}
+
+.dark-mode header,
+.dark-mode main,
+.dark-mode footer {
+    background: #21191b;
+    color: #f8f4ef;
+}
+
+.dark-mode section {
+    background: #2b2023;
+    color: #f8f4ef;
+    border-color: #5f2a3a;
+}
+
+.dark-mode #contact {
+    background: linear-gradient(145deg, #6f102b, #9b173d);
+}
+
+.dark-mode #summary,
+.dark-mode #tech-skills,
+.dark-mode #additional {
+    background: #322528;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode footer {
+    color: #d94f78;
+}
+
+.dark-mode p,
+.dark-mode li {
+    color: #f8f4ef;
+}
+
+.dark-mode nav a,
+.dark-mode #theme-toggle {
+    background: #3a2a2d;
+    color: #f8f4ef;
+}
+
+.dark-mode nav a:hover,
+.dark-mode #theme-toggle:hover {
+    background: #9b173d;
+    color: white;
+}
+
+#theme-toggle {
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 999px;
+    background: #f0ddd7;
+    color: #6f102b;
+    padding: 9px 15px;
+    cursor: pointer;
+}
+.dark-mode .review-card {
+    background: #fff8f3;
+    color: #1f1f1f;
+    border-color: #ead5cf;
+}
+
+.dark-mode .review-card p {
+    color: #1f1f1f;
+}
+
+.dark-mode .review-card strong {
+    color: #6f102b;
+}
